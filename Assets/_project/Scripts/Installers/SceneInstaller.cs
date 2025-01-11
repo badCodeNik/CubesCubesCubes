@@ -1,3 +1,4 @@
+using _project.Scripts.Services.InputService;
 using Zenject;
 
 namespace _project.Scripts.Installers
@@ -6,7 +7,15 @@ namespace _project.Scripts.Installers
     {
         public override void InstallBindings()
         {
-            
+            BindInput();
+        }
+
+        private void BindInput()
+        {
+            Container.BindInterfacesAndSelfTo<Input>().
+                AsSingle();
+            Container.Bind<CubeDragHandler>().
+                AsSingle().NonLazy();
         }
     }
 }
