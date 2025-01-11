@@ -1,20 +1,20 @@
-﻿using UnityEngine;
+﻿using _project.Scripts;
+using UnityEngine;
 
-namespace _project.Scripts
+public class Cube : MonoBehaviour, IDraggable
 {
-    public class Cube : MonoBehaviour
+    public void OnDragStart(Vector3 position)
     {
-        private bool _isDragged;
-        public bool IsDragged => _isDragged;
+        Debug.Log("Cube drag started!");
+    }
 
-        public void Drag()
-        {
-            _isDragged = true;
-        }
+    public void OnDrag(Vector3 position)
+    {
+        Debug.Log("Cube drag started!");
+    }
 
-        public void Drop()
-        {
-            _isDragged = false;
-        }
+    public void OnDragEnd(Vector3 position)
+    {
+        Debug.Log("Cube drag ended!");
     }
 }

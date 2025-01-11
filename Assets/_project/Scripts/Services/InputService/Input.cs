@@ -2,7 +2,7 @@
 using UnityEngine;
 using Zenject;
 
-namespace _project.Scripts
+namespace _project.Scripts.Services.InputService
 {
     public class Input : IInput, ITickable
     {
@@ -16,7 +16,7 @@ namespace _project.Scripts
 
         public Input()
         {
-            Debug.Log("kek");
+            
         }
 
         public void Tick()
