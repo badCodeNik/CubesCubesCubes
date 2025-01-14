@@ -5,14 +5,15 @@ TagManager:
   serializedVersion: 2
   tags:
   - Tower
+  - Draggable
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Cube
   - Water
   - UI
-  - 
+  - Tower
   - 
   - 
   - 

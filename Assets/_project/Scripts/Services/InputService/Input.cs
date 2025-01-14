@@ -16,7 +16,7 @@ namespace _project.Scripts.Services.InputService
 
         public Input()
         {
-            
+           
         }
 
         public void Tick()
